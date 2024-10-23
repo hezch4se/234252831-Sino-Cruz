@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Survey</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1 id="title">Basketball Survey</h1>
+    <p id="description">Hey there! We’d love to hear your thoughts on basketball. Please take a moment to fill out this quick survey.</p>
+
+    <form id="survey-form">
+        <label id="name-label" for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+        
+        <label id="email-label" for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+        
+        <label id="number-label" for="number">Age</label>
+        <input type="number" id="number" name="age" placeholder="Your age" min="1" max="120" required>
+        
+        <label for="dropdown">How often do you play basketball?</label>
+        <select id="dropdown" name="play-frequency" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="once-a-week">Once a week</option>
+            <option value="two-to-three-times">Two to three times a week</option>
+            <option value="almost-every-day">Almost every day</option>
+        </select>
+
+        <p>Which position(s) do you mainly play in basketball? (Select all that apply)</p>
+        <label><input type="checkbox" name="position" value="point-guard"> Point guard</label>
+        <label><input type="checkbox" name="position" value="shooting-guard"> Shooting guard</label>
+        <label><input type="checkbox" name="position" value="small-forward"> Small forward</label>
+        <label><input type="checkbox" name="position" value="power-forward"> Power forward</label>
+        <label><input type="checkbox" name="position" value="center"> Center</label>
+
+        <label for="favorite-team">What is your favorite basketball team?</label>
+        <input type="text" id="favorite-team" name="favorite-team" placeholder="Your favorite team">
+
+        <p>Do you watch professional basketball games?</p>
+        <label><input type="radio" name="watch-games" value="yes-regularly" required> Yes, regularly</label>
+        <label><input type="radio" name="watch-games" value="occasionally" required> Occasionally</label>
+        <label><input type="radio" name="watch-games" value="no" required> No, I don't watch</label>
+
+        <label for="favorite-player">Who is your favorite basketball player?</label>
+        <input type="text" id="favorite-player" name="favorite-player" placeholder="Your favorite player">
+
+        <label for="comments">Any other thoughts you want to share?</label>
+        <textarea id="comments" name="comments" placeholder="Let us know what you think..."></textarea>
+
+        <button type="submit" id="submit">Submit Survey</button>
+    </form>
+</body>
+</html>
