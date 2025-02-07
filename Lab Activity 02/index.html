@@ -11,17 +11,17 @@
     <nav class="nav">
         <div class="nav-logo">TechSol</div>
         <div class="nav-menu" id="navMenu">
-            <a href="#home" class="link active">Home</a>
-            <a href="#about" class="link">About</a>
-            <a href="#services" class="link">Services</a>
-            <a href="#contact" class="link">Contact</a>
+            <a href="#home" class="link active" onclick="showSection('home')">Home</a>
+            <a href="#about" class="link" onclick="showSection('about')">About</a>
+            <a href="#services" class="link" onclick="showSection('services')">Services</a>
+            <a href="#contact" class="link" onclick="showSection('contact')">Contact</a>
         </div>
         <div class="nav-menu-btn" onclick="myMenuFunction()">
             <i class="bx bx-menu"></i>
         </div>
     </nav>
 
-    <section id="home" class="hero">
+    <section id="home" class="hero section visible">
         <div class="hero-content">
             <h1>Transform Your Business</h1>
             <p>Innovative solutions for modern enterprises</p>
@@ -31,7 +31,9 @@
 
     <section id="about" class="section">
         <h2>About Us</h2>
-        <p>We specialize in providing cutting-edge digital solutions that drive business growth and innovation.</p>
+        <p class="your-class">
+            We specialize in providing cutting-edge digital solutions that drive business growth and innovation. Our expertise spans web and mobile development, cloud computing, AI-powered analytics, and automation, ensuring businesses stay ahead in an ever-evolving digital landscape. By leveraging the latest technologies, we help companies streamline operations, enhance customer experiences, and unlock new opportunities for success. Whether you're a startup looking to establish a strong online presence or an enterprise seeking digital transformation, we deliver tailored solutions that align with your goals and maximize your competitive advantage.
+        </p>
     </section>
 
     <section id="services" class="section">

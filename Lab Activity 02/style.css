@@ -8,13 +8,10 @@
 }
 
 body {
-    background: url("images/2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow-x: hidden;
+    background: url("images/desmumtz13.jpg") no-repeat center center; /* Background image */
+    background-size: cover; /* Cover the entire body */
+    overflow: hidden; /* Prevent scrolling */
 }
-
 
 .nav {
     position: fixed;
@@ -24,7 +21,7 @@ body {
     align-items: center;
     width: 100%;
     padding: 20px 80px;
-    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    background: rgba(0, 0, 0, 0.9); /* Solid background color for nav */
     z-index: 1000;
     transition: 0.3s;
 }
@@ -61,33 +58,34 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
     display: flex;
-    align-items: center;
-    padding: 0 80px;
     color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    text-align: center;
 }
 
 .hero-content {
-    max-width: 800px;
+    margin-top: 200px; /* Adjust this to move it lower */
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 3.5rem; /* Large heading */
+    margin-bottom: 1rem; /* Space below heading */
 }
-
 
 .cta-btn {
     background-color: #2563eb; 
     color: white !important; 
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem; /* Button padding */
     border: none;
-    border-radius: 30px;
+    border-radius: 30px; /* Rounded corners */
     font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; /* Transition for hover effect */
 }
 
 .cta-btn:hover {
@@ -95,125 +93,142 @@ body {
     color: white !important;
 }
 
-
+/* Section Styles */
 .section {
-    padding: 5rem 80px;
-    background: rgba(255, 255, 255, 0.8);
-    min-height: 100vh;
+    display: none; /* Hide all sections by default */
+    padding: 5rem 80px; /* Padding for sections */
+    min-height: 100vh; /* Minimum height for sections */
+    opacity: 0; /* Start hidden */
+    transform: translateX(100%); /* Start off-screen to the right */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for sliding effect */
+}
+
+
+.section.visible {
+    display: block; /* Show the active section */
+    opacity: 1; /* Fade in */
+    transform: translateX(0); /* Slide in */
 }
 
 .section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #333;
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 2rem; /* Space below heading */
+    color: #ffffff; /* Change text color */
 }
 
-
+/* Services Grid */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between grid items */
 }
 
 .service-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white for cards */
+    padding: 2rem; /* Padding for cards */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Shadow effect */
+    transition: 0.3s; /* Transition for hover effect */
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Lift effect on hover */
 }
 
 /* Contact Form */
 input:invalid, textarea:invalid {
-    border-color: #ff4444;
+    border-color: #ff4444; /* Invalid input border color */
 }
 
 input:valid, textarea:valid {
-    border-color: #00C851;
+    border-color: #00C851; /* Valid input border color */
 }
 
 .form-status {
-    color: white;
-    text-align: center;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-    display: none;
+    color: white; /* Status message text color */
+    text-align: center; /* Center text */
+    margin-top: 1rem; /* Space above */
+    padding: 1rem; /* Padding for status message */
+    border-radius: 5px; /* Rounded corners */
+    display: none; /* Hidden by default */
 }
 
 .form-status.success {
-    background: #00C851;
-    display: block;
+    background: #00C851; /* Success message background */
+    display: block; /* Show on success */
 }
 
 .form-status.error {
-    background: #ff4444;
-    display: block;
+    background: #ff4444; /* Error message background */
+    display: block; /* Show on error */
 }
 
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 600px; /* Max width for form */
+    margin: 0 auto; /* Center form */
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.9);
+    width: 100%; /* Full width */
+    padding: 1rem; /* Padding for inputs */
+    margin-bottom: 1.5rem; /* Space below inputs */
+    border: 1px solid #ddd; /* Border for inputs */
+    border-radius: 30px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.9); /* Background for inputs */
 }
 
 .contact-form textarea {
-    height: 150px;
-    resize: vertical;
+    height: 150px; /* Height for textarea */
+    resize: vertical; /* Allow vertical resizing */
 }
 
+.your-class {
+    color: rgb(0, 0, 0); /* Makes the text white */
+    font-size: 1rem; /* Increases the text size */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px; /* Rounded corners */
+}
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .nav {
-        padding: 20px;
+        padding: 20px; /* Adjust padding for nav */
     }
 
     .nav-menu {
         position: fixed;
-        top: 70px;
-        right: -100%;
-        flex-direction: column;
-        background: rgba(39,39,39, 0.9);
-        width: 100%;
-        text-align: center;
-        padding: 2rem 0;
-        transition: 0.3s;
+        top: 70px; /* Position for mobile menu */
+        right: -100%; /* Hide off-screen */
+        flex-direction: column; /* Stack vertically */
+        background: rgba(255, 255, 255, 0.9); /* Solid background color for nav */
+        width: 100%; /* Full width */
+        text-align: center; /* Center text */
+        padding: 2rem 0; /* Padding for mobile menu */
+        transition: 0.3s; /* Transition for menu */
     }
 
     .nav-menu.active {
-        right: 0;
+        right: 0; /* Show menu */
     }
 
     .nav-menu a {
-        padding: 1rem;
+        padding: 1rem; /* Padding for menu items */
     }
 
     .nav-menu-btn {
-        display: block;
+        display: block; /* Show menu button */
     }
 
     .hero {
-        padding: 0 20px;
+        padding: 0 20px; /* Adjust padding for hero */
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Adjust heading size for mobile */
     }
 
     .section {
-        padding: 3rem 20px;
+        padding: 3rem 20px; /* Adjust padding for sections */
     }
 }
