@@ -175,7 +175,7 @@ input:valid, textarea:valid {
     resize: vertical;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .nav {
         padding: 20px;
