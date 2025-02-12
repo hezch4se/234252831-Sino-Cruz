@@ -3,11 +3,12 @@ function myMenuFunction() {
     navMenu.classList.toggle('active');
 }
 
+
 function showSection(sectionId) {
     
     const sections = document.querySelectorAll('.section');
     sections.forEach(section => {
-        section.classList.remove('visible'); // Remove visible class
+        section.classList.remove('visible'); 
     });
 
     
@@ -22,7 +23,7 @@ document.querySelectorAll('.nav-menu a').forEach(anchor => {
         const targetId = this.getAttribute('href').substring(1); 
         showSection(targetId); 
 
-        // Update active class
+        
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.classList.remove('active');
         });
