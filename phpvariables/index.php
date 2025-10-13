@@ -22,73 +22,73 @@
                 <div class="carousel-track" id="carouselTrack">
                     <!-- Duplicate buttons for infinite loop (original + clone) -->
                     <div class="button-wrapper">
-                        <button class="activity-btn" onclick="redirectTo('activity1.php')">
+                        <button class="activity-btn" onclick="redirectTo('act1.php')">
                             <span>Introduce Yourself</span>
                         </button>
                     </div>
                     <div class="button-wrapper">
-                        <button class="activity-btn" onclick="redirectTo('activity2.php')">
+                        <button class="activity-btn" onclick="redirectTo('act2.php')">
                             <span>Simple Math Task</span>
                         </button>
                     </div>
                     <div class="button-wrapper">
-                        <button class="activity-btn" onclick="redirectTo('activity3.php')">
+                        <button class="activity-btn" onclick="redirectTo('act3.php')">
                             <span>Area and Perimeter of a Rectangle</span>
                         </button>
                     </div>
                     <div class="button-wrapper">
-                        <button class="activity-btn" onclick="redirectTo('activity4.php')">
+                        <button class="activity-btn" onclick="redirectTo('act4.php')">
                             <span>Temperature Converter</span>
                         </button>
                     </div>
                     <div class="button-wrapper">
-                        <button class="activity-btn" onclick="redirectTo('activity5.php')">
+                        <button class="activity-btn" onclick="redirectTo('act5.php')">
                             <span>Swapping Variables</span>
                         </button>
                     </div>
                     <div class="button-wrapper">
-                        <button class="activity-btn" onclick="redirectTo('activity6.php')">
+                        <button class="activity-btn" onclick="redirectTo('act6.php')">
                             <span>Salary Calculator</span>
                         </button>
                     </div>
                     <div class="button-wrapper">
-                        <button class="activity-btn" onclick="redirectTo('activity7.php')">
+                        <button class="activity-btn" onclick="redirectTo('act7.php')">
                             <span>BMI Calculator</span>
                         </button>
                     </div>
                     <div class="button-wrapper">
-                        <button class="activity-btn" onclick="redirectTo('activity8.php')">
+                        <button class="activity-btn" onclick="redirectTo('act8.php')">
                             <span>String Manipulation</span>
                         </button>
                     </div>
                     <div class="button-wrapper">
-                        <button class="activity-btn" onclick="redirectTo('activity9.php')">
+                        <button class="activity-btn" onclick="redirectTo('act9.php')">
                             <span>Bank Account Simulation</span>
                         </button>
                     </div>
                     <div class="button-wrapper">
-                        <button class="activity-btn" onclick="redirectTo('activity10.php')">
+                        <button class="activity-btn" onclick="redirectTo('act10.php')">
                             <span>Simple Grading System</span>
                         </button>
                     </div>
                     <div class="button-wrapper">
-                        <button class="activity-btn" onclick="redirectTo('activity11.php')">
+                        <button class="activity-btn" onclick="redirectTo('acti11.php')">
                             <span>Currency Converter</span>
                         </button>
                     </div>
                     <div class="button-wrapper">
-                        <button class="activity-btn" onclick="redirectTo('activity12.php')">
+                        <button class="activity-btn" onclick="redirectTo('act12.php')">
                             <span>Travel Cost Estimator</span>
                         </button>
                     </div>
                     <!-- Clones for infinite loop (hidden initially) -->
                     <div class="button-wrapper clone">
-                        <button class="activity-btn" onclick="redirectTo('activity1.php')">
+                        <button class="activity-btn" onclick="redirectTo('act1.php')">
                             <span>Introduce Yourself</span>
                         </button>
                     </div>
                     <div class="button-wrapper clone">
-                        <button class="activity-btn" onclick="redirectTo('activity2.php')">
+                        <button class="activity-btn" onclick="redirectTo('act2.php')">
                             <span>Simple Math Task</span>
                         </button>
                     </div>
