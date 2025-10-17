@@ -18,7 +18,6 @@
         
         <div class="activity-content">
             <?php
-            // Area and Perimeter of a Rectangle Task
             $length = 10;
             $width = 4;
             $area = $length * $width;
@@ -45,7 +44,6 @@
     <a href="index.php" class="back-btn"><i class="fas fa-arrow-left"></i> Go Back to Activity List</a>
 
     <script>
-        // Shared JS (same as above)
     </script>
 </body>
 </html>

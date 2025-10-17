@@ -18,7 +18,6 @@
         
         <div class="activity-content">
             <?php
-            // Simple Math Task
             $a = 15;
             $b = 5;
             $sum = $a + $b;
@@ -55,7 +54,6 @@
     <a href="index.php" class="back-btn"><i class="fas fa-arrow-left"></i> Go Back to Activity List</a>
 
     <script>
-        // Shared JS here (same as Activity 1)
         document.addEventListener('DOMContentLoaded', function() {
             const content = document.querySelector('.activity-content');
             if (content) {

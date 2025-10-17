@@ -18,7 +18,6 @@
         
         <div class="activity-content">
             <?php
-            // Introduce Yourself Task
             $name = "John Hared";
             $age = 21;
             $fav_color = "Black";
@@ -36,7 +35,6 @@
     <a href="index.php" class="back-btn"><i class="fas fa-arrow-left"></i> Go Back to Activity List</a>
 
     <script>
-        // Shared JS here
         document.addEventListener('DOMContentLoaded', function() {
             const content = document.querySelector('.activity-content');
             if (content) {

@@ -18,7 +18,6 @@
         
         <div class="activity-content">
             <?php
-            // BMI Calculator Task
             $weight = 60;
             $height = 1.65;
             $bmi = $weight / ($height * $height);
@@ -44,7 +43,6 @@
     <a href="index.php" class="back-btn"><i class="fas fa-arrow-left"></i> Go Back to Activity List</a>
 
     <script>
-        // Shared JS (same as above)
     </script>
 </body>
 </html>

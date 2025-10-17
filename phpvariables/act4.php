@@ -18,7 +18,6 @@
         
         <div class="activity-content">
             <?php
-            // Temperature Converter Task
             $celsius = 25;
             $fahrenheit = ($celsius * 9/5) + 32;
             ?>
@@ -39,7 +38,6 @@
     <a href="index.php" class="back-btn"><i class="fas fa-arrow-left"></i> Go Back to Activity List</a>
 
     <script>
-        // Shared JS (same as above)
     </script>
 </body>
 </html>

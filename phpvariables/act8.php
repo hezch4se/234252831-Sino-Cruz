@@ -18,7 +18,6 @@
         
         <div class="activity-content">
             <?php
-            // String Manipulation
             $sentence = "Young stunna is the great";
             $charL = strlen($sentence);
             $wordL = str_word_count($sentence);
@@ -54,7 +53,6 @@
     <a href="index.php" class="back-btn"><i class="fas fa-arrow-left"></i> Go Back to Activity List</a>
 
     <script>
-        // Shared JS (same as above)
     </script>
 </body>
 </html>

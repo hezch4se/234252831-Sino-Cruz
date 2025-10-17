@@ -49,7 +49,6 @@
     <a href="index.php" class="back-btn"><i class="fas fa-arrow-left"></i> Go Back to Activity List</a>
 
     <script>
-        // Shared JS (same as Activity 5)
         document.addEventListener('DOMContentLoaded', function() {
             const content = document.querySelector('.activity-content');
             if (content) {

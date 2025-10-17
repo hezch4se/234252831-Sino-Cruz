@@ -18,7 +18,6 @@
         
         <div class="activity-content">
             <?php
-            // Swapping Variables Task
             $x = 10;
             $y = 20;
             $beforeX = $x;

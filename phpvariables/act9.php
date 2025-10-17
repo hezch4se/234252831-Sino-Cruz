@@ -18,12 +18,11 @@
         
         <div class="activity-content">
             <?php
-            // Bank Account Simulation
             $balance = 5000;
             $deposit = 3000;
             $withdraw = 3000;
             $balanceAfterDeposit = $balance + $deposit;
-            $balanceAfterWithdraw = $balance - $withdraw; // Note: Uses original balance as per original code
+            $balanceAfterWithdraw = $balance - $withdraw; 
             ?>
             <div class="output-card">
                 <h3><i class="fas fa-piggy-bank"></i> Account Transactions</h3>
@@ -54,7 +53,6 @@
     <a href="index.php" class="back-btn"><i class="fas fa-arrow-left"></i> Go Back to Activity List</a>
 
     <script>
-        // Shared JS (same as above)
     </script>
 </body>
 </html>

@@ -18,7 +18,6 @@
         
         <div class="activity-content">
             <?php
-            // Simple Grading System
             $math = 85;
             $english = 90;
             $science = 80;
@@ -58,7 +57,6 @@
     <a href="index.php" class="back-btn"><i class="fas fa-arrow-left"></i> Go Back to Activity List</a>
 
     <script>
-        // Shared JS (same as above)
     </script>
 </body>
 </html>
