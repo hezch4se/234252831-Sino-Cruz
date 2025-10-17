@@ -16,11 +16,9 @@
             <p class="subtitle">Dive into interactive PHP exercises and sharpen your coding skills!</p>
         </header>
         
-        <!-- Carousel Container -->
         <div class="carousel-container">
             <div class="carousel">
                 <div class="carousel-track" id="carouselTrack">
-                    <!-- Duplicate buttons for infinite loop (original + clone) -->
                     <div class="button-wrapper">
                         <button class="activity-btn" onclick="redirectTo('act1.php')">
                             <span>Introduce Yourself</span>
@@ -81,7 +79,6 @@
                             <span>Travel Cost Estimator</span>
                         </button>
                     </div>
-                    <!-- Clones for infinite loop (hidden initially) -->
                     <div class="button-wrapper clone">
                         <button class="activity-btn" onclick="redirectTo('act1.php')">
                             <span>Introduce Yourself</span>
@@ -92,11 +89,9 @@
                             <span>Simple Math Task</span>
                         </button>
                     </div>
-                    <!-- Add more clones as needed for smooth loop; here, first 2 for demo -->
                 </div>
             </div>
             
-            <!-- Indicators -->
             <div class="carousel-indicators" id="carouselIndicators"></div>
         </div>
     </div>
@@ -106,7 +101,6 @@
             window.location.href = page;
         }
 
-        // Carousel JavaScript
         class Carousel {
             constructor() {
                 this.track = document.getElementById('carouselTrack');
@@ -118,9 +112,9 @@
                 this.currentTranslate = 0;
                 this.prevTranslate = 0;
                 this.animationID = 0;
-                this.threshold = 100; // Min swipe distance
-                this.numButtons = this.buttonWrappers.length; // 12
-                this.buttonWidth = 320; // Approx width including gap; adjust if needed
+                this.threshold = 100; 
+                this.numButtons = this.buttonWrappers.length; 
+                this.buttonWidth = 320; 
                 
                 this.init();
             }
@@ -135,7 +129,6 @@
                 this.track.addEventListener('mouseleave', this.mouseEnd.bind(this));
                 this.track.addEventListener('mousemove', this.mouseMove.bind(this));
                 
-                // Entrance animation
                 const wrappers = document.querySelectorAll('.button-wrapper');
                 wrappers.forEach((wrapper, index) => {
                     wrapper.style.opacity = '0';
@@ -177,7 +170,6 @@
                 this.track.style.transform = `translateX(${amount}px)`;
             }
             
-            // Touch Events
             touchStart(e) {
                 this.startPos = e.touches[0].clientX;
                 this.isDragging = true;
@@ -198,7 +190,6 @@
                 }
             }
             
-            // Mouse Events (simplified drag)
             mouseStart(e) {
                 this.startPos = e.clientX;
                 this.isDragging = true;
@@ -245,7 +236,6 @@
             }
         }
         
-        // Initialize Carousel on Load
         document.addEventListener('DOMContentLoaded', () => {
             new Carousel();
         });
